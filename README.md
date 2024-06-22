@@ -4,7 +4,7 @@ Welcome to EverWrite – your go-to app for all your note-taking needs! With Eve
 
 ## Features
 
-- User Authentication: Secure sign-up and login process powered by Firebase.
+- User Authentication: Secure sign-up and login process powered by AppWrite.
 - Create Notes: Write notes with a title and body text.
 - Customize Text: Format your text with various styling options.
 - Upload Images: Enhance your notes by adding images.
@@ -23,5 +23,5 @@ Welcome to EverWrite – your go-to app for all your note-taking needs! With Eve
 ## Technologies Used 
 
 - React: Front-end library for building user interfaces.
-- Firebase: Backend services for authentication and database.
+- AppWrite: Backend services for authentication and database.
 - CSS: Styling the app for a pleasant user experience.
