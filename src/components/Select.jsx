@@ -15,11 +15,13 @@ const Select = ({ options, label, className = "", ...props }, ref) => {
          border border-gray-200 w-full`}
       >
         {options?.map((option) => (
-          <option key={}></option>
+          <option key={option} value={option}>
+            {option}
+          </option>
         ))}
       </select>
     </div>
   );
 };
 
-export default Select;
+export default React.forwardRef(Select);
