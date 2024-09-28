@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, PostCard } from "../components";
 import everWriteService from "../EverWrite/config";
 
-function AllPost() {
+function AllPosts() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {}, []);
   everWriteService.getPosts([]).then((posts) => {
@@ -25,4 +25,4 @@ function AllPost() {
   );
 }
 
-export default AllPost;
+export default AllPosts;
