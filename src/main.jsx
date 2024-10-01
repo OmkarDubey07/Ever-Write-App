@@ -10,7 +10,7 @@ import Home from "./pages/Home.jsx";
 import Signup from "./pages/Signup.jsx";
 import AllPosts from "./pages/AllPosts.jsx";
 import AddPost from "./pages/AddPost.jsx";
-import EditPost from './pages/EditPost.jsx'
+import EditPost from './pages/EditPost.jsx' 
 import Post from './pages/Post.jsx'
 
 const router = createBrowserRouter([
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: (
-          <AuthLayout authenticaion={false}>
+          <AuthLayout authentication={false}>
             <Login />
           </AuthLayout>
         ),
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         path: "/signup",
         element: (
           <AuthLayout authentication={false}>
-            <Signup />
+            <Signup /> 
           </AuthLayout>
         ),
       },
