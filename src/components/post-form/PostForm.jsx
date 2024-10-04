@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useForm } from "react-hook-form";
-import { Button, Input, RTE, Select } from "../index";
+import { Button, Input, RTE, Select } from "..";
 import EverWriteService from "../../EverWrite/config.js";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -76,11 +76,11 @@ export default function PostForm({ post }) {
 
   return (
     <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
-      <div className="w-2/3 px-2">
+      <div className="w-2/3 px-2 font-medium">
         <Input
           label="Title :"
           placeholder="Title"
-          className="mb-4"
+          className="mb-4 font-medium"
           {...register("title", { required: true })}
         />
         <Input

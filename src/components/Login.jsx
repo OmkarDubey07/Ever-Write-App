@@ -17,7 +17,7 @@ const Login = () => {
     try {
       const session = await authService.Login(data);
       if (session) {
-        const userDate = await authService.GetCurrentUser();
+        const userDate = await authService.getCurrentUser(); // here 
         if (userDate) dispatch(authLogin(userDate));
         navigate("/");
       }

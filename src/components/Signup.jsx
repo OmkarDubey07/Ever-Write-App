@@ -15,9 +15,9 @@ const Signup = () => {
   const create = async (data) => {
     setError("");
     try {
-      const userData = await authService.CreateAccount(data);
+      const userData = await authService.createAccount(data);
       if (userData) {
-        const userData = await authService.GetCurrentUser();
+        const userData = await authService.getCurrentUser();
         if (userData) dispatch(login(userData));
         navigate("/");
       }
@@ -50,8 +50,8 @@ const Signup = () => {
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
 
-        <form onSubmit={handleSubmit(create)}>
-          <div className="space-y-5">
+        <form onSubmit={handleSubmit(create)} className="mt-8">
+          <div className="space-y-5 ">
             <Input
               label="Full Name: "
               placeholder="Enter your full name"
