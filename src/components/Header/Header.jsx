@@ -39,17 +39,17 @@ const Header = () => {
     <header className="py-3 shadow rounded-xl font-medium">
       <Container>
         <nav className="flex">
-          <div className="mr-4 mt-2">
+          <div className="max-sm:hidden mr-4 mt-2">
             <Link to="/">
               <Logo width="70px" />
             </Link>
           </div>
-          <ul className="flex ml-auto">
+          <ul className="flex ml-auto max-sm:m-auto">
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
                   <button
-                    className="inline-block py-2 px-6 duration-200 hover:bg-blue-100 rounded-full "
+                    className="inline-block py-2 px-6 max-sm:px-4 duration-200 hover:bg-blue-100 rounded-full "
                     onClick={() => navigate(item.slug)}
                   >
                     {item.name}

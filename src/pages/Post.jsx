@@ -33,9 +33,9 @@ export default function Post() {
   };
 
   return post ? (
-    <div className="py-8">
+    <div className="py-8 border border-orange-300 my-4 rounded-2xl">
       <Container>
-        <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
+        <div className="max-sm:w-full max-lg:w-8/12 w-4/12 flex justify-center m-auto mb-4 relative  border-zinc-600 rounded-xl p-2">
           <img
             src={everwriteService.getFilePreview(post.featuredImage)}
             alt={post.title}
@@ -43,7 +43,7 @@ export default function Post() {
           />
 
           {isAuthor && (
-            <div className="absolute right-6 top-6">
+            <div className="absolute right-4 top-4">
               <Link to={`/edit-post/${post.$id}`}>
                 <Button bgColor="bg-green-500" className="mr-3">
                   Edit
